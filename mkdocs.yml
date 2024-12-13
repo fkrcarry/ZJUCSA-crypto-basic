@@ -1,0 +1,85 @@
+site_name: 浙江大学网络空间安全协会培训
+site_url: https://github.com/fkrcarry/ZJUCSA-crypto-basic/page
+site_dir: public # 设置 site_dir 配合 gitlab CI
+repo_url: https://github.com/fkrcarry/ZJUCSA-crypto-basic
+repo_name: ZJUCSA-crypto-basic
+edit_uri: -/blob/master/docs
+
+theme:
+  name: material
+  icon:
+    edit: material/pencil
+  features:
+    - content.action.edit
+    - navigation.tracking
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+  font:
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - 古典密码: crypto_basic.md
+  - 密码学简介: 密码学简介.md
+  #- 实验指导零: lab0.md
+  #- 实验指导一: lab1.md
+  #- 实验指导二: lab2.md
+  #- 实验指导三: lab3.md
+  #- 实验指导四: lab4.md
+  #- 实验指导五: lab5.md
+  #- 实验指导六: lab6.md
+  #- 综合实验: lab7.md
+  # - 综合实验 IP 核配置: ip_config.md
+  #- Spike 工具链的使用: spike_tool.md
+  # - 常见问题及解答: faq.md
+  #- 注意事项: Notes.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search
+  - heti:
+      extra_skipped_class:
+        - arithmatex

@@ -32,18 +32,7 @@ theme:
 nav:
   - 古典密码: crypto_basic.md
   - 密码学简介: 密码学简介.md
-  #- 实验指导零: lab0.md
-  #- 实验指导一: lab1.md
-  #- 实验指导二: lab2.md
-  #- 实验指导三: lab3.md
-  #- 实验指导四: lab4.md
-  #- 实验指导五: lab5.md
-  #- 实验指导六: lab6.md
-  #- 综合实验: lab7.md
-  # - 综合实验 IP 核配置: ip_config.md
-  #- Spike 工具链的使用: spike_tool.md
-  # - 常见问题及解答: faq.md
-  #- 注意事项: Notes.md
+  
 
 markdown_extensions:
   - toc:

@@ -18,3 +18,5 @@ $ mkdocs serve
         └── resource.zip        # 每个附件都会有一个resource.zip，其解压密码是解出来的flag
             └── taskchuti.c     # 出题的源码
 ```
+
+## 本人实力有限，如若本培训有内容不正确，欢迎发issue和提交pull request
